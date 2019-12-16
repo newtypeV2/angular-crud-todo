@@ -9,6 +9,8 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { AddToDoComponent } from './components/add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './components/pages/about/about.component';
+import { SplashComponent } from './components/pages/splash/splash.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormsModule } from '@angular/forms';
     TodosComponent,
     TodoItemComponent,
     HeaderComponent,
-    AddToDoComponent
+    AddToDoComponent,
+    AboutComponent,
+    SplashComponent
   ],
   imports: [
     BrowserModule,

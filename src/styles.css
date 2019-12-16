@@ -43,3 +43,7 @@ a{
 .is-complete{
     text-decoration: line-through;
 }
+
+.link{
+    margin: 0 1rem;
+}

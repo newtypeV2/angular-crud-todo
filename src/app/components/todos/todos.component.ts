@@ -1,3 +1,4 @@
+import { Todo } from './../../models/Todos';
 import { TodoService } from './../../services/todo.service';
 import { Todo } from '../../models/Todos';
 import { Component, OnInit } from '@angular/core';
@@ -18,7 +19,7 @@ export class TodosComponent implements OnInit {
     });
   }
 
-  PdeleteTodo(task){
+  PdeleteTodo(task:Todo){
     //Optimistic Rendering
     let index = this.todos.findIndex(todo => todo.id === task.id);
     this.todos.splice(index,1);
@@ -29,7 +30,7 @@ export class TodosComponent implements OnInit {
     })
   }
 
-  PaddTodo(task){
+  PaddTodo(task:Todo){
     this.TodoService.addTodo(task).subscribe(task =>{
       console.log('new task', task);
       this.todos.push(task);

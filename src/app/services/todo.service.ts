@@ -32,10 +32,9 @@ export class TodoService {
     return this.http.delete(url,httpOptions);
   }
 
-  addTodo(todo:any):Observable<any>{
+  addTodo(todo:Todo):Observable<any>{
     const url = `${this.todoUrl}`;
-    const body = todo;
-    return this.http.post(url,body,httpOptions)
+    return this.http.post(url,todo,httpOptions)
   }
 
 }
