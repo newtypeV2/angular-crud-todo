@@ -1,0 +1,11 @@
+<app-add-todo
+    (addTodo)="PaddTodo($event)"
+>
+</app-add-todo
+    >
+<app-todo-item 
+    *ngFor="let task of todos"
+    [task] = task
+    (deleteTodo)="PdeleteTodo($event)"
+>
+</app-todo-item>
