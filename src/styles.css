@@ -1,49 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4;
-}
-
-a{
-    color: #333;
-    text-decoration: none;
-}
-.container{
-    padding: 0 1rem;
-}
-
-.btn{
-    display: inline-block;
-    border: none;
-    background: #555;
-    color: #fff;
-    padding: 7px 20px;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background: #666;
-}
-
-.delete{
-    background: red;
-    color: #fff;
-    padding: 1rem 1rem;
-    border-radius: 25%;
-    cursor: pointer;
-    float: right;
-}
-
-.todo{
-    background: #f3f3f3;
-    padding: 1rem;
-    border-bottom: 1px #ccc dotted;
+.navbar{
+    margin-bottom: 1rem;
 }
 
 .is-complete{
-    text-decoration: line-through;
+    text-decoration-line: line-through;
 }
 
-.link{
-    margin: 0 1rem;
+.todo{
+    margin: .3rem;
 }

@@ -1,11 +1,16 @@
-<app-add-todo
-    (addTodo)="PaddTodo($event)"
->
-</app-add-todo
+<div class="row justify-content-center">
+    <app-add-todo
+        (addTodo)="PaddTodo($event)"
     >
-<app-todo-item 
-    *ngFor="let task of todos"
-    [task] = task
-    (deleteTodo)="PdeleteTodo($event)"
->
-</app-todo-item>
+    </app-add-todo>
+</div>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <app-todo-item 
+            *ngFor="let task of todos"
+            [task] = task
+            (deleteTodo)="PdeleteTodo($event)"
+        >
+        </app-todo-item>
+    </div>
+</div>

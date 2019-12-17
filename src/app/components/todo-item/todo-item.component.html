@@ -1,8 +1,10 @@
-<div [ngClass]="setClasses()">
-    <p >
+<div [ngClass]="setClasses()" class="row todo">
+        <div class="col-auto">
         <input (change)="onToggle(task)" type="checkbox" [checked]="task.completed"/>
-        {{task.title}}
-        <button (click)="onClick(task)" class="delete">X</button>
-    </p>
+        {{task.title | uppercase}}
+        </div>
+        <div class="col-auto">
+        <button (click)="onClick(task)" class="btn btn-danger delete">X</button>
+        </div>
     </div>
         

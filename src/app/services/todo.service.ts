@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TodoService {
-  todoLimit = '?_limit=3';
+  todoLimit = '?_limit=10';
   todoUrl:string = 'https://my-json-server.typicode.com/newtypeV2/ToDoAPI/Todos';
 
   constructor(private http:HttpClient) { }
@@ -32,9 +32,9 @@ export class TodoService {
     return this.http.delete(url,httpOptions);
   }
 
-  addTodo(todo:Todo):Observable<any>{
+  addTodo(todo:Todo):Observable<Todo>{
     const url = `${this.todoUrl}`;
-    return this.http.post(url,todo,httpOptions)
+    return this.http.post<Todo>(url,todo,httpOptions)
   }
 
 }
